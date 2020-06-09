@@ -73,8 +73,9 @@ module "app_subnets" {
 
 }
 
+/*  Note:  Will create this cluster when needed
 ##############################################################################
-# Create IKS Cluster
+# Create app IKS Cluster
 ##############################################################################
 resource "ibm_container_vpc_cluster" "app_cluster" {
     name              = "${var.environment}-iks-01"
@@ -99,9 +100,9 @@ resource "ibm_container_vpc_cluster" "app_cluster" {
         name      = "${var.region}-3"
     }
 }
-
+*/
 ##############################################################################
-# Create Razee IKS Cluster
+# Create admin IKS Cluster
 ##############################################################################
 resource "ibm_container_vpc_cluster" "adm_cluster" {
     name              = "${var.environment}-admin"
