@@ -101,6 +101,8 @@ resource "ibm_container_vpc_cluster" "app_cluster" {
     }
 }
 */
+
+/*  Note:  Will create this cluster when needed
 ##############################################################################
 # Create admin IKS Cluster
 ##############################################################################
@@ -127,7 +129,7 @@ resource "ibm_container_vpc_cluster" "adm_cluster" {
         name      = "${var.region}-3"
     }
 }
-
+*/
 
 output vpc_id {
  value = module.vpc.vpc_id
